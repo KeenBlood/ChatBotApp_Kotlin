@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         Button.setOnClickListener {
-            Submitted.text = (Text.text)
+            Submitted.text = ( Text.text.toString() + "" )
             DisplayText.text = ("Bot: \n" + DecisionTree.response(Text.text.toString()))
 			Text.text.clear()
         }
