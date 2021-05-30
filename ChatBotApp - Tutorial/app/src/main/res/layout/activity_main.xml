@@ -10,28 +10,23 @@
         android:id="@+id/displaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Helo! My name is Bot! Ask Me Something!"
-        android:textColor="#000000"
+        android:text="Hello! My name is Bot! Ask me something!"
+        android:textColor="@color/black"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"/>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/gray"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/user_message"
@@ -46,7 +41,6 @@
             android:padding="10dp"
             android:singleLine="true" />
 
-
         <Button
             android:id="@+id/button_send"
             android:layout_width="match_parent"
@@ -55,9 +49,8 @@
             android:layout_weight="1"
             android:background="@drawable/round_button"
             android:text="Send"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             app:backgroundTint="@color/teal_700" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
